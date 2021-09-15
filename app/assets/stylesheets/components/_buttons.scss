@@ -1,0 +1,15 @@
+.btn-gen {
+  background-color: #F38383;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  width: 96px;
+  height: 38px;
+  
+  &:hover {
+    background-color: #f97676;
+    color: #ffffff;
+    transition-delay: 100ms;
+  }
+}
