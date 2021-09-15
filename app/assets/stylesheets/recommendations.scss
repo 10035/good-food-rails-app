@@ -1,3 +1,21 @@
 // Place all the styles related to the Recommendations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.container {
+  border-style: solid;
+  border-color: #F38383;
+  border-width: 2px;
+  width: 50%;
+  height: 314px;
+  margin: auto;
+  padding: 5%;
+  
+  .banner {
+    background-color: rgb(234, 224, 112);
+  } 
+
+  .body {
+    background-color: rgb(206, 168, 118);
+  }
+}
