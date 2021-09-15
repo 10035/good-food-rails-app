@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+root to: 'recommendations/new'
+
+# /recommendations/new is the first page the user sees
+resources :recommendations, only [ :new ]
+
+# From there, user is able to generate a new set of meal recommendations 
+
 end
