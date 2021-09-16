@@ -1,3 +1,10 @@
 <h1>Show Recommendations Page</h1>
 
-<%=@meals.last(3)  %>
+<%=recommendations = @meals.sample(3) %>
+
+<p><%=recommendations.class %></p>
+
+
+<p><% recommendations.each do |meal|  %>
+<p><%= meal.name  %></p>
+<% end %>
