@@ -1,6 +1,7 @@
 <p>Recommendations Page</p>
 
 <div class="container">
+  <div class="breadcrum-back"><%= link_to "🔙", recommendations_new_path%></div>
   <div class="banner">
     <% recommendations = @meals.sample(1) %>
     <% recommendations.each do |meal|  %>
@@ -12,7 +13,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam excepturi velit accusamus exercitationem perferendis est vitae.</p>
   </div>
     <div class=card-bottom>
-        <button class="btn-gen"><%= link_to "Generate New", recommendations_show_path%></button>
+        <button class="btn-gen"><%= link_to " 🤤 ", recommendations_show_path%></button>
     </div>
   </div>
 </div>
