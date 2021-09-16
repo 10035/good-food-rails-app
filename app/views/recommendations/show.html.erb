@@ -1,9 +1,26 @@
 <h1>Show Recommendations Page</h1>
 
-<%=recommendations = @meals.sample(3) %>
+<div class="container">
+  <div class="banner">
+    <h1>GoodFood</h1>
+  </div>
+  <div class="body">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam excepturi velit accusamus exercitationem perferendis est vitae.</p>
+    <div>
+    <button class="btn-gen"> <%= link_to "Reset", recommendations_new_path%></button>
+    </div>
+    <div>
+    <button class="btn-gen"> <%= link_to "Reset", recommendations_new_path%></button>
+    </div>
+  </div>
+</div>
 
-<p><%=recommendations.class %></p>
 
+
+
+
+
+<% recommendations = @meals.sample(3) %>
 
 <p><% recommendations.each do |meal|  %>
 <p><%= meal.name  %></p>

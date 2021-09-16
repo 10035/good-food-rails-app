@@ -1,0 +1,30 @@
+.container {
+  border: rgba(92, 104, 126, 0.113);
+  border-style: solid;
+  border-width: 0.2px;
+  box-shadow: 5px 10px 5px rgba(224, 224, 224, 0.148);
+  border-radius: 10px;
+  width: 50%;
+  height: 500px;
+  margin: auto;
+  padding-bottom: 5%;
+  
+  
+  .banner {
+    // background-color: rgb(234, 224, 112);
+    height: 100px;
+    text-align: center;
+    padding: 10%;
+    
+  } 
+  
+  .body {
+    // background-color: rgb(206, 168, 118);
+    padding: 15%;
+  }
+
+  .card-bottom {
+    padding: 10%;
+    padding-left: 36%;
+  }
+}
