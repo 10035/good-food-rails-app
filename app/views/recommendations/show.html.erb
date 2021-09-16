@@ -1,27 +1,21 @@
-<h1>Show Recommendations Page</h1>
+<p>Recommendations Page</p>
 
 <div class="container">
   <div class="banner">
-    <h1>GoodFood</h1>
+    <% recommendations = @meals.sample(1) %>
+    <% recommendations.each do |meal|  %>
+    <h1><%= meal.name  %></h1>
+    <% end %>
   </div>
   <div class="body">
+  <div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam excepturi velit accusamus exercitationem perferendis est vitae.</p>
-    <div>
-    <button class="btn-gen"> <%= link_to "Reset", recommendations_new_path%></button>
-    </div>
-    <div>
-    <button class="btn-gen"> <%= link_to "Reset", recommendations_new_path%></button>
+  </div>
+    <div class=card-bottom>
+        <button class="btn-gen"><%= link_to "Generate New", recommendations_show_path%></button>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-<% recommendations = @meals.sample(3) %>
-
-<p><% recommendations.each do |meal|  %>
-<p><%= meal.name  %></p>
-<% end %>
+<div class=card-bottom>
+    <button class="btn-gen"><%= link_to "Go Back", recommendations_new_path%></button>
+</div>
